@@ -120,24 +120,26 @@ const SidebarMenu = ({ collapsedMenu, setCollapsed }) => {
         collapsedWidth="0"
         className="sidebarStyle"
       >
-        <div className="sidetitle" style={{}}>
-          <div className="med-logo">
-            <img
-              style={{ display: "flex" }}
-              src={heart}
-              width={"100%"}
-              height={30}
-            ></img>
+        <div className="sidebarStyle">
+          <div className="sidetitle" style={{}}>
+            <div className="med-logo">
+              <img
+                style={{ display: "flex" }}
+                src={heart}
+                width={"100%"}
+                height={30}
+              ></img>
+            </div>
+            <span className="appname">MEDILINE</span>
           </div>
-          <span className="appname">MEDILINE</span>
+          <Menu
+            mode="inline"
+            onClick={onClick}
+            selectedKeys={[currentLocation]}
+            items={items}
+            className="menuitems"
+          ></Menu>
         </div>
-        <Menu
-          mode="inline"
-          onClick={onClick}
-          selectedKeys={[currentLocation]}
-          items={items}
-          className="menuitems"
-        ></Menu>
       </Sider>
     </>
   );
