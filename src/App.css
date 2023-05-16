@@ -1,0 +1,82 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  background-color: blue;
+  width: 30vw;
+  /* height: 100vh; */
+}
+
+.main_content {
+  width: 70vw;
+  height: 100vh;
+  /* background-color: aqua; */
+  /* height:10vh; */
+}
+
+.header {
+  height: 10vh;
+  background-color: aqua;
+}
+
+.content {
+  height: 90vh;
+  background-color: brown;
+}
+
+.searchbox {
+  float: left;
+}
+
+.usericon {
+  float: right;
+}
+
+.icon-button {
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 0px;
+  height: 10px;
+  color: #333333;
+  background: #dddddd;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.icon-button:hover {
+  cursor: pointer;
+}
+
+.icon-button:active {
+  background: #cccccc;
+}
+
+.icon-button__badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+#customDrawer {
+  height: 100vh;
+  flex: 0 0 200px;
+  max-width: 230px !important;
+  min-width: 230px !important;
+  width: 230px !important;
+}
