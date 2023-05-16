@@ -121,6 +121,7 @@ const SidebarMenu = ({ collapsedMenu, setCollapsed }) => {
         className="sidebarStyle"
       >
         <div className="sidebarStyle">
+          
           <div className="sidetitle" style={{}}>
             <div className="med-logo">
               <img
